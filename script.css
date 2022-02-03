@@ -1,0 +1,41 @@
+tr#week{
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+}
+
+span#text{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+
+td#week{
+    background-color: darkgrey;
+}
+
+td#weekend{
+    background-color: indianred;
+}
+
+body{
+    background-color: mintcream;
+}
+
+td#schedule1{
+    background-color: palegreen;
+}
+
+td#schedule2{
+    background-color: palegreen;
+}
+
+h1#list{
+    font-size: 20px;
+}
+
+.line{
+    border-bottom: 1px sold lightslategrey;
+    width: 175px;
+    margin: 7px auto;
+}
