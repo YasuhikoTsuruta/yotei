@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="theme-color" content="#000000">
+  <script type="text/javascript" src="./modl/lodash.min.js"></script>
+  <link rel="stylesheet" href="script.css"/>
+  
+</head>
+
+<body>
+<h1>作業管理表</h1>
+<p>今日は<span id="text"></span>です</p>
+
+  <script type="text/javascript">
+    document.getElementById("text").innerHTML = showDay();
+  function showDay() {
+    let now = new Date();
+    let month = now.getMonth()+1;
+    let day = now.getDate();
+    return month + "月" + day + "日";
+  }
+  </script>
+
+
+  <table border="1"　align=center>
+    <tr id="dayOfWeek">　
+      <th>作業者/曜日</th>
+    <td id="week">月曜日</td>
+    <td id="week">火曜日</td>
+    <td id="week">水曜日</td>
+    <td id="week">木曜日</td>
+    <td id="week">金曜日</td>
+    <td id="weekend">土曜日</td>
+    <td id="weekend">日曜日</td>
+   </tr>
+   <tr>
+     <th>Aさん</th>
+    <td>プログラミング</td>
+    <td>プログラミング</td>
+    <td>プログラミング</td>
+    <td>プログラミング</td>
+    <td id="schedule1">プログラミング</td>
+    <td>休み</td>
+    <td>休み</td>
+   </tr>
+   <tr>
+    <th>Bさん</th>
+    <td >改善</td>
+    <td>改善</td>
+    <td>改善</td>
+    <td>改善</td>
+    <td id="schedule2">改善</td>
+　　<td>休み</td>
+    <td>休み</td>
+  </tr>
+  </table>
+  
+  <ul>
+    <h1　id="list">やることリスト</h1>
+    <li>創意くふう提出</li>
+    <li>作業場改善</li>
+  </ul>
+
+  <hr>
+  <a href = "https://www.shiki.jp/applause/unmasked/"> 練習</a>
+  <script type="text/javascript" src="script.js"></script>
+</html>
